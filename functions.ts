@@ -44,6 +44,7 @@ function moveForward(tron) {
         tron.y -= 1;
         if (tron.y <= 1 || tron.travelLog.indexOf(`${tron.x},${tron.y}`) > -1) {
             console.log('Pow');
+            clearInterval(intervalId)
         } else {
             tron.travelLog.push(`${tron.x},${tron.y}`)
         }
@@ -51,6 +52,7 @@ function moveForward(tron) {
         tron.x += 1;
         if (tron.x >= 99 || tron.travelLog.indexOf(`${tron.x},${tron.y}`) > -1) {
             console.log('Pow');
+            clearInterval(intervalId)
         } else {
             tron.travelLog.push(`${tron.x},${tron.y}`)
         }
@@ -58,6 +60,7 @@ function moveForward(tron) {
         tron.y += 1;
         if (tron.y >= 99 || tron.travelLog.indexOf(`${tron.x},${tron.y}`) > -1) {
             console.log('Pow');
+            clearInterval(intervalId)
         } else {
             tron.travelLog.push(`${tron.x},${tron.y}`)
         }
@@ -65,12 +68,17 @@ function moveForward(tron) {
         tron.x -= 1;
         if (tron.x <= 1 || tron.travelLog.indexOf(`${tron.x},${tron.y}`) > -1) {
             console.log('Pow');
+            clearInterval(intervalId)
         } else {
 
             tron.travelLog.push(`${tron.x},${tron.y}`)
         }
     } console.log(tron)
 }
+
+let intervalId = setInterval(function () {
+    moveForward(tron);
+}, 1000);
 
 //moveForward(tron);
 //turnRight(tron);
