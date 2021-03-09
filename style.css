@@ -1,0 +1,42 @@
+.spiel {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 1rem;
+}
+
+.controller {
+   background-color:chocolate;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 2vw;
+   padding-right: 2vw;
+}
+
+#links {
+    background-color:darkseagreen;
+    padding: 10px;
+}
+
+#rechts {
+    background-color:darkseagreen;
+    padding: 10px;
+}
+
+.fläche {
+    display: grid;
+    grid-template-columns: repeat(10, 55px);
+    /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+    grid-gap: 0.5rem;
+}
+
+.fläche > div {
+    background-color: rosybrown;
+    content: "";
+    padding-top: 100%;
+    display: block;
+}
+
+
