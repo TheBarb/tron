@@ -5,7 +5,7 @@
     grid-gap: 1rem;
 }
 
-.controller {
+.controller1 {
    background-color:chocolate;
    display: flex;
    flex-direction: row;
@@ -15,6 +15,16 @@
    padding-right: 2vw;
 }
 
+.controller2 {
+    background-color:chocolate;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+ }
+
 #links {
     background-color:darkseagreen;
     padding: 10px;
@@ -23,6 +33,11 @@
 #rechts {
     background-color:darkseagreen;
     padding: 10px;
+}
+
+#start {
+    background-color:fuchsia;
+    padding: 20px;
 }
 
 .fläche {
@@ -38,5 +53,4 @@
     padding-top: 100%;
     display: block;
 }
-
 
